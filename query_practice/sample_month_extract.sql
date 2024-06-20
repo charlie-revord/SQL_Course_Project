@@ -3,3 +3,5 @@ FROM job_postings_fact
 WHERE EXTRACT(YEAR FROM job_posted_date) = '2023'
 GROUP BY posted_month
 ORDER BY posted_month ASC;
+
+--Quick Change
