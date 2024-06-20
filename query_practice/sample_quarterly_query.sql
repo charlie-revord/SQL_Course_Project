@@ -5,3 +5,5 @@ WHERE EXTRACT(QUARTER FROM job_postings.job_posted_date) = 2 AND EXTRACT(YEAR FR
 GROUP BY company_dim.name
 HAVING COUNT(job_id) >= 1
 ORDER BY job_count DESC;
+
+-- Test
