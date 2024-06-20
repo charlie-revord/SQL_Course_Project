@@ -14,5 +14,3 @@ WHERE company_avg_salaries.company_average > (
     FROM job_postings_fact
 )
 ORDER BY company_dim.name ASC;
-
---TEST
