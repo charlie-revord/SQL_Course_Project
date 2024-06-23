@@ -31,4 +31,4 @@ WHERE
         job_title_short ILIKE '%Data_Analyst%' AND
         job_country = 'United States'
 GROUP BY experience_level, skills_dim.skills
-ORDER BY skill_count DESC, skills ASC, experience_level ASC;
+ORDER BY skill_count DESC;
