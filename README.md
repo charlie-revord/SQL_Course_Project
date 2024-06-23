@@ -10,10 +10,10 @@ This analysis project showcases my mastery of SQL query-writing, Markdown, and m
 
 In this project, my objective was to identify trends among the top 10 firms that are hiring Data Analysts within the United States. I organized this analysis into 5 queries:
 
-1. What are the top 10 businesses located in the U.S. hiring Data Analysts by the number of jobs posted?
-2. What is the distribution of Work From Home (WFH) jobs versus In-person jobs among these 10 firms by job count?
-3. What is the average salary for Data Analyst roles by Top 10 company?  
-4. What are the top 15 demanded skills by total count of mentions across jobs posted by the Top 10 businesses?
+1. What are the top 10 businesses hiring Data Analysts, located in the U.S., by the number of jobs posted?
+2. What is the distribution of Work From Home (WFH) jobs versus In-person jobs among the Top 10 hiring firms by job count?
+3. What is the average salary for Data Analyst roles at each Top 10 company?  
+4. What are the top 15 demanded skills, by total count of mentions across jobs posted, across the Top 10 hiring businesses?
 5. Finally, are the top demanded skills different by experience level (Junior/Entry, Lead/Manager, Senior, and Unspecified)?
 
 The job dataset provided for this project originates from Luke Barousse's datanerd.tech app, which helps budding data professionals identify the most in-demand skills by data profession. 
@@ -166,7 +166,7 @@ LIMIT 15;
 
 The leading in-demand skills for the Top 10 U.S. companies hiring Data Analysts are: SQL, Excel, Python, and Tableau.
 
-The remainder of the 15 top 15 skills decrease in mentions, and appear to be more situational in their relevance. 
+The remainder of the top 15 skills decrease in mentions, and appear to be more situational. 
 
 ## Query 5: In-Demand Skills by Experience Level
 
@@ -214,19 +214,18 @@ ORDER BY skill_count DESC;
 
 Attempting to identify skill variance by job title keywords to assess experience level is inconsistent. A significant number of job titles do not reference experience level, as shown by the top "Not Specificed" results. 
 
-The result should be taken with a grain of salt. That said, the top skills for experience-agnostic and senior level positions are similar: The top 2 skills for Senior-level rolse are SQL and Tableau, and those skills rank highly among the 'Not Specified' Experience cohort.
+The result should be taken with a grain of salt. That said, the top skills for experience-agnostic and senior level positions are similar: The top 2 skills for Senior-level roles are SQL and Tableau, and those skills rank highly among the 'Not Specified' Experience cohort.
 
 # Insights Summary
 
 From this project, I gathered the following:
 
-* Companies that value Data Analysts hire many people with this position type, and, on average pay them well.
+* Companies that value Data Analysts hire many people with this position type, and, on average, pay them well.
 * Unless you are pursuing a role through a 3rd party recruiting firm, expect many established companies, like banks and insurance companies, to not offer WFH for Data Analyst roles. 
-* The top skills aspiring Data Analysts should pursue are SQL and Python, with experience in results visualization software such as Tableau or Power BI.
+* The top skills aspiring Data Analysts should pursue are SQL and Python, with experience in results visualization software such as Tableau or Power BI a plus.
 
 # ✅ Conclusion
 
 I enjoyed this analysis project because it allowed me to explore a large dataset, extract results, and disseminate them using a modern workflow. 
 
 Big thanks to Luke Barousse and Kelly Adams for designing the course! 
-
